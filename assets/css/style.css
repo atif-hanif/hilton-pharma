@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #D71D20;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --font-family: 'Poppins';
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--black-color);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: var(--black-color);
+}
+
+.forgot {
+    color:var(--primary-color) !important;
+}
+
+.first-btn {
+    border-color: var(--primary-color) !important;
+    background-color: var(--primary-color) !important;
+}
+
+.first-btn:hover {
+    border-color: var(--black-color) !important;
+    background-color: var(--black-color) !important;
+}
+
+.nxl-container .nxl-content .main-content {
+    padding: 15px;
+}
+
+.page-header h5 {
+    color: var(--black-color);
+    border-right: 1px solid transparent;
+}
+
+.card, .page-header {
+    margin-bottom: 15px;
+}
