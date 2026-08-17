@@ -30,6 +30,12 @@ body {
     align-items: center;
 }
 
+.nxl-navigation .navbar-content .nxl-arrow {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+}
+
 .card {
     margin-bottom: 0px;
 }
@@ -62,7 +68,7 @@ body {
     padding-left: 0;
 }
 
-.avatar-text {
+.text-avatar {
     width: 40px;
     height: 40px;
     max-width: 40px;
@@ -81,11 +87,19 @@ body {
 	color: var(--white-color);
 }
 
+.card .card-header .card-title {
+    font-weight: 500;
+}
+
+.custom-file, .custom-select, .form-control, .form-select, input {
+	height: 46px;
+}
+
 /* Organization Structure */
 
 .chart-scroll {
 	overflow-x: auto;
-	width: 77vw;
+	min-width: calc(100vw - 380px);
 }
 
 .org-row {
@@ -285,11 +299,11 @@ body {
 	width: 2px;
 	height: 56px;
 	background: var(--primary-color);
-	margin-left: 1495px;
+	margin-left: 1070px;
 }
 
 .elbow-h-line {
-	width: 1297px;
+	width: 872px;
 	height: 2px;
 	background: var(--primary-color);
 	margin-left: 200px;
