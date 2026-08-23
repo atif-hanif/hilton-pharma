@@ -894,6 +894,7 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header">
+                                <i class="fa-solid fa-user"></i>
                                 <h5 class="card-title">Personal Information</h5>
                             </div>
                             <div class="card-body">
@@ -927,19 +928,20 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header">
+                                <i class="fa-solid fa-briefcase-blank"></i>
                                 <h5 class="card-title">Professional Details</h5>
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-lg-4 mb-16">
+                                    <div class="col-lg-4 mb-3">
                                         <label for="reference_id" class="form-label">Reference ID</label>
                                         <input type="text" class="form-control" id="reference_id" name="reference_id" value="REF-00842-PH" readonly>
                                     </div>
-                                    <div class="col-lg-4 mb-16">
+                                    <div class="col-lg-4 mb-3">
                                         <label for="joining_date" class="form-label">Joining Date <span class="required">*</span></label>
                                         <input type="date" class="form-control" id="joining_date" name="joining_date">
                                     </div>
-                                    <div class="col-lg-4 mb-16">
+                                    <div class="col-lg-4 mb-3">
                                         <label for="designation" class="form-label">Designation <span class="required">*</span></label>
                                         <select class="form-select" id="designation">
                                             <option>Select Designation</option>
@@ -948,7 +950,7 @@
                                             <option>Production Pharmacist</option>
                                         </select>
                                     </div>
-                                    <div class="col-lg-4 mb-16 mb-lg-0">
+                                    <div class="col-lg-4 mb-3 mb-lg-0">
                                         <label for="teams" class="form-label">Teams <span class="required">*</span></label>
                                         <select class="form-select" id="designation">
                                             <option>Select Teams</option>
@@ -957,11 +959,11 @@
                                             <option>Tiger</option>
                                         </select>
                                     </div>
-                                    <div class="col-lg-4 mb-16 mb-lg-0">
+                                    <div class="col-lg-4 mb-3 mb-lg-0">
                                         <label for="designation_title" class="form-label">Designation Title <span class="required">*</span></label>
                                         <input type="text" class="form-control" id="designation_title" name="designation_title" placeholder="e.g. Senior Regional Sales Consultant">
                                     </div>
-                                    <div class="col-lg-4 mb-16 mb-lg-0">
+                                    <div class="col-lg-4 mb-3 mb-lg-0">
                                         <label for="town" class="form-label">Base Town <span class="required">*</span></label>
                                         <select class="form-select" id="town">
                                             <option>Select Town</option>
@@ -973,6 +975,79 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row mb-16">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa-sharp fa-solid fa-money-bills"></i>
+                                <h5 class="card-title">Contact & Compensation</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 mb-16 mb-lg-0">
+                                        <label for="email_address" class="form-label">Email Address <span class="required">*</span></label>
+                                        <input type="email" class="form-control" id="email_address" name="email_address" placeholder="Enter Email">
+                                    </div>
+                                    <div class="col-lg-3 mb-16 mb-lg-0">
+                                        <label for="mobile_number" class="form-label">Mobile Number <span class="required">*</span></label>
+                                        <input type="tel" class="form-control" id="mobile_number" name="mobile_number" placeholder="Enter Mobile Number">
+                                    </div>
+                                    <div class="col-lg-3 mb-16 mb-lg-0">
+                                        <label for="gross_salary" class="form-label">Gross Salary (PKR) <span class="required">*</span></label>
+                                        <input type="number" class="form-control" id="gross_salary" name="gross_salary">
+                                    </div>
+                                    <div class="col-lg-3 mb-16 mb-lg-0">
+                                        <label for="avail_leaves" class="form-label">Avail Leaves <span class="required">*</span></label>
+                                        <input type="number" class="form-control" id="avail_leaves" name="avail_leaves">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-16">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <h5 class="card-title">Mapping & Assignment</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-16 mb-lg-0">
+                                        <label for="assignment" class="form-label w-100">Assignment Type <span class="required">*</span></label>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Replace With">
+                                            <label class="form-check-label" for="inlineCheckbox1">Replace With</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Select Territory">
+                                            <label class="form-check-label" for="inlineCheckbox2">Select Territory</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-16 mb-lg-0">
+                                        <label for="employee_replace" class="form-label">Employee to Replace / Map: <span class="required">*</span></label>
+                                        <select class="form-select" id="employee_replace">
+                                            <option>Select from Active Directory</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-end gap-2">
+                        <button type="button" class="btn btn-primary btn-blue">
+                            <i class="fa-solid fa-xmark pe-2"></i>
+                            Cancel
+                        </button>
+                        <button type="button" class="btn btn-danger btn-red">
+                            <i class="fa-solid fa-floppy-disk pe-2"></i>
+                            Cancel
+                        </button>
                     </div>
                 </div>
             </div>

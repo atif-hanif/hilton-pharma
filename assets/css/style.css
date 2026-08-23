@@ -4,6 +4,16 @@
     --white-color: #ffffff;
 	--blue-color: #00236F;
     --border-color: #E2E8F0;
+	--bg-soft-info: #cff4fc;
+	--text-info: #0dcaf0;
+	--bg-soft-primary: #cfe2ff;
+	--text-primary: #0d6efd;
+	--bg-soft-success: #d1e6dd;
+	--text-success: #188754;
+	--bg-soft-danger: #f7d7da;
+	--text-danger: #dc3546;
+	--bg-soft-warning: #fff3cd;
+	--text-warning: #fec107;
     --font-family: 'Poppins';
 }
 
@@ -93,6 +103,72 @@ body {
 
 .custom-file, .custom-select, .form-control, .form-select, input {
 	height: 46px;
+}
+
+.card .card-header {
+    justify-content: start;
+	gap: 8px;
+}
+
+.card .card-header i {
+    color: var(--blue-color);
+}
+
+.btn-red {
+	color: var(--white-color) !important;
+    border-color: var(--primary-color) !important;
+    background-color: var(--primary-color) !important;
+}
+
+.btn-blue {
+	color: var(--white-color) !important;
+    border-color: var(--blue-color) !important;
+    background-color: var(--blue-color) !important;
+}
+
+.bg-soft-info {
+    background-color: var(--bg-soft-info) !important;
+}
+
+.text-info {
+    color: var(--text-info) !important;
+}
+
+.bg-soft-warning {
+    background-color: var(--bg-soft-warning)!important;
+}
+
+.text-warning {
+    color: var(--text-warning) !important;
+}
+
+.bg-soft-success {
+    background-color: var(--bg-soft-success) !important;
+}
+
+.text-success {
+    color: var(--text-success) !important;
+}
+
+.bg-soft-danger {
+    background-color: var(--bg-soft-danger)!important;
+}
+
+.text-danger {
+    color: var(--text-danger) !important;
+}
+
+.bg-soft-primary {
+    background-color: var(--bg-soft-primary) !important;
+}
+
+.text-primary {
+    color: var(--text-primary) !important;
+}
+
+.badge {
+    font-size: 12px;
+	padding: 8px;
 }
 
 /* Organization Structure */
