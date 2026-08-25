@@ -883,38 +883,78 @@
     <main class="nxl-container">
         <div class="nxl-content">
             <div class="main-content">
-                <div class="page-header mb-16">
-                    <div class="page-header-left d-flex align-items-center">
+                <div class="page-header mb-16 justify-content-between">
+                    <div class="page-header-left d-flex">
                         <div class="page-header-title">
-                            <h5 class="mb-0">Form Management</h5>
+                            <h5 class="mb-0">Contact Point Master List</h5>
+                        </div>
+                    </div> 
+                    <div class="page-header-right">
+                        <a href="add-contact-point.html" class="btn btn-primary btn-blue">
+                            <i class="fa-solid fa-location-dot pe-2"></i>
+                            Add New Contact Point
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-16">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 mb-3 mb-lg-0">
+                                        <label for="department" class="form-label">Quick Search</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                            <input type="text" class="form-control" placeholder="Search by name or reference ID">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mb-lg-0">
+                                        <label for="leave_type" class="form-label">City</label>
+                                        <select class="form-select" id="leave_type">
+                                            <option>All Types</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mb-lg-0">
+                                        <label for="status" class="form-label">Status</label>
+                                        <select class="form-select" id="status">
+                                            <option>All Status</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2 mt-lg-auto">
+                                        <button type="button" class="btn btn-danger btn-red">
+                                            <i class="fa-solid fa-rotate-left pe-2"></i>
+                                            Reset Filters
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
-                            <div class="card-header">
-                                <h5 class="card-title">All Forms</h5>
-                            </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table class="table table-striped" id="form_management">
+                                    <table class="table table-striped" id="contact_point">
                                         <thead>
                                             <tr>
-                                                <th>Form Type Name</th>
-                                                <th>Description</th>
-                                                <th>Status</th>
+                                                <th>Reference ID</th>
+                                                <th>Contact Point Name</th>
+                                                <th>City</th>
+                                                <th>Coordinates (Lat/Long)</th>
                                                 <th class="text-end">Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>BAR</td>
-                                                <td>Solid form medication bar</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
+                                                <td>CP-8842-ZH</td>
+                                                <td>Zürich Central Lab (North)</td>
+                                                <td>Karachi</td>
+                                                <td>47.3769° N, 8.5417° E</td>
                                                 <td>
                                                     <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
+                                                        <a href="plan-details.html" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="View">
                                                             <i class="fa-regular fa-pen"></i>
                                                         </a>
                                                         <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
@@ -924,12 +964,13 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Body Wash</td>
-                                                <td>Liquid Topical Solution</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
+                                                <td>CP-9102-BS</td>
+                                                <td>Basel Bio-Research Hub</td>
+                                                <td>Hyderabad</td>
+                                                <td>47.5596° N, 7.5886° E</td>
                                                 <td>
                                                     <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
+                                                        <a href="plan-details.html" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="View">
                                                             <i class="fa-regular fa-pen"></i>
                                                         </a>
                                                         <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
@@ -939,12 +980,13 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Capsule</td>
-                                                <td>Encapsulated Dose</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
+                                                <td>CP-4411-GV</td>
+                                                <td>Geneva Pharma Point</td>
+                                                <td>Lahore</td>
+                                                <td>46.2044° N, 6.1432° E</td>
                                                 <td>
                                                     <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
+                                                        <a href="plan-details.html" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="View">
                                                             <i class="fa-regular fa-pen"></i>
                                                         </a>
                                                         <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
@@ -954,12 +996,29 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Dispenser</td>
-                                                <td>Manual dispensing mechanism</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
+                                                <td>CP-0052-MA</td>
+                                                <td>Cambridge Innovation Wing</td>
+                                                <td>Badin</td>
+                                                <td>42.3736° N, 71.1097° W</td>
                                                 <td>
                                                     <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
+                                                        <a href="plan-details.html" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="View">
+                                                            <i class="fa-regular fa-pen"></i>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
+                                                            <i class="fa-regular fa-trash"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>CP-7723-LD</td>
+                                                <td>London Clinical Annex</td>
+                                                <td>Karachi</td>
+                                                <td>51.5074° N, 0.1278° W</td>
+                                                <td>
+                                                    <div class="hstack gap-2 justify-content-end">
+                                                        <a href="plan-details.html" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="View">
                                                             <i class="fa-regular fa-pen"></i>
                                                         </a>
                                                         <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
@@ -983,7 +1042,7 @@
     <script src="assets/js/common-init.min.js"></script>
     <script src="assets/vendors/datatables/js/datatables.min.js"></script>
     <script src="assets/vendors/datatables/js/datatables.bootstrap5.min.js"></script>
-    <script src="assets/js/form-management.js"></script>
+    <script src="assets/js/contact-point.js"></script>
 </body>
 
 </html>

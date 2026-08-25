@@ -14,6 +14,7 @@
 	--text-danger: #dc3546;
 	--bg-soft-warning: #fff3cd;
 	--text-warning: #fec107;
+	--tabs-bg: #E6EEFF;
     --font-family: 'Poppins';
 }
 
@@ -169,6 +170,10 @@ body {
 .badge {
     font-size: 12px;
 	padding: 8px;
+}
+
+.blue {
+	color: var(--blue-color);
 }
 
 /* Organization Structure */
@@ -403,4 +408,86 @@ body {
 
 .floating-plus-row .plus-btn {
 	margin-left: 786px;
+}
+
+/* Planning View */
+
+.custom-pills {
+	background-color: var(--tabs-bg);
+	padding: 8px;
+	border-radius: 6px;
+}
+
+.custom-pills .nav-link {
+	color: var(--black-color);
+}
+
+.custom-pills .nav-link.active, .custom-pills .show>.nav-link {
+	color: var(--blue-color);
+	background-color: var(--white-color);
+}
+
+.plan-progress-bar {
+	height: 10px;
+}
+
+.plan-progress-bar .progress-bar {
+	width: 92%;
+	background-color: var(--blue-color);
+}
+
+ul.timeline {
+    list-style: none;
+    position: relative;
+    padding-left: 0;
+}
+
+ul.timeline:before {
+    content: '';
+    position: absolute;
+    left: 26px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #d4d9df;
+    z-index: 1;
+}
+
+ul.timeline > li {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 50px;
+}
+
+/* Green circle */
+ul.timeline > li:before {
+    content: '';
+    position: absolute;
+    left: 17px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--text-success);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Black check icon */
+ul.timeline > li:after {
+    content: '\f00c';
+    position: absolute;
+    left: 20px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    border-radius: 50%;
+    font-family: "Font Awesome 6 Pro";
+    font-size: 8px;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 3;
 }

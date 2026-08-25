@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/datatables/css/datatables.bootstrap5.css">
+    <link href='assets/vendors/full-calendar/skeleton.css' rel='stylesheet' />
+    <link href='assets/vendors/full-calendar/themes/classic/theme.css' rel='stylesheet' />
+    <link href='assets/vendors/full-calendar/themes/classic/palette.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="assets/css/poppins.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -886,90 +889,206 @@
                 <div class="page-header mb-16">
                     <div class="page-header-left d-flex align-items-center">
                         <div class="page-header-title">
-                            <h5 class="mb-0">Form Management</h5>
+                            <h5 class="mb-0">Plan Details</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-16">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <div class="d-flex align-items-center gap-3 mb-3">
+                                            <h4 class="mb-0">Furqan ul Haque</h4>
+                                            <span class="badge rounded-pill text-primary bg-soft-primary">Pending Review</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-1">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p class="mb-0">Period: Oct 01 - Oct 31, 2023</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-regular fa-file-pdf pe-2"></i>
+                                            Export PDF
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="card-title">All Forms</h5>
+                    <div class="col-lg-8 mb-3 mb-lg-0">
+                        <div class="card mb-3">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">Day to Day Plan</h5>
+                                <ul class="nav nav-pills custom-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="pill" href="#list">List View</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="pill" href="#calendars">Calendar</a>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-striped" id="form_management">
-                                        <thead>
-                                            <tr>
-                                                <th>Form Type Name</th>
-                                                <th>Description</th>
-                                                <th>Status</th>
-                                                <th class="text-end">Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>BAR</td>
-                                                <td>Solid form medication bar</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
-                                                            <i class="fa-regular fa-pen"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Body Wash</td>
-                                                <td>Liquid Topical Solution</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
-                                                            <i class="fa-regular fa-pen"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Capsule</td>
-                                                <td>Encapsulated Dose</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
-                                                            <i class="fa-regular fa-pen"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Dispenser</td>
-                                                <td>Manual dispensing mechanism</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
-                                                            <i class="fa-regular fa-pen"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="list">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped" id="view_plan">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Target Doctor / Chemist</th>
+                                                        <th>Activity Type</th>
+                                                        <th>Objective</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="mb-0 blue">Aug 02</p>
+                                                            <span class="text-muted">Monday</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="text-avatar">
+                                                                <span>EH</span>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="d-block mb-0 fw-bold">Dr. Elena Halpert</p>
+                                                                    <span>St. Mary's Cardiology</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge bg-soft-primary text-primary rounded-pill">Call</span></td>
+                                                        <td>Introduce Xyla-Duo cardiac maintenance protocols.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="mb-0 blue">Aug 02</p>
+                                                            <span class="text-muted">Monday</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="text-avatar">
+                                                                <span>CP</span>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="d-block mb-0 fw-bold">City Pharma Lab</p>
+                                                                    <span>Regional Distributor</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge bg-soft-primary text-primary rounded-pill">Call</span></td>
+                                                        <td>Verify Q3 inventory levels and cold chain compliance.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="mb-0 blue">Aug 03</p>
+                                                            <span class="text-muted">Tuesday</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="text-avatar">
+                                                                <span>JS</span>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="d-block mb-0 fw-bold">Dr. James Smith</p>
+                                                                    <span>Wellness General Clinic</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge bg-soft-primary text-primary rounded-pill">Metting</span></td>
+                                                        <td>CME session on metabolic syndrome management.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="mb-0 blue">Aug 04</p>
+                                                            <span class="text-muted">Wednesday</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="text-avatar">
+                                                                <span>AK</span>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="d-block mb-0 fw-bold">Dr. Anita Kumar</p>
+                                                                    <span>Endocrine Specialist Center</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge bg-soft-primary text-primary rounded-pill">Call</span></td>
+                                                        <td>Follow-up on patient feedback for Insulin G2.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="calendars">
+                                        <div id="calendar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Workflow Timeline</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="timeline">
+                                    <li>
+                                        <p class="mb-1 fw-bold">Submitted by SPO</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="mb-0">Robert Chen</p>
+                                            <i class="fa-solid fa-circle fs-8"></i>
+                                            <p class="mb-0">Aug 01, 2026</p>
+                                        </div>
+                                        <p>"Initial plan based on Q3 patient volume data."</p>
+                                    </li>
+                                    <li>
+                                        <p class="mb-1 fw-bold">ASM Recommendation</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="mb-0">Sarah Jenkins</p>
+                                            <i class="fa-solid fa-circle fs-8"></i>
+                                            <p class="mb-0">Aug 03, 2026</p>
+                                        </div>
+                                        <p>"Strongly recommend approval Dr. Vance has exceeded targets for 3 consecutive quarters. ROI is high probable."</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="mb-3">Review Action</h5>
+                                <div class="p-2 bg-soft-primary mb-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <p class="mb-0">Coverage As Per Frequency</p>
+                                        <p class="mb-0 blue fw-bold">92%</p>
+                                    </div>
+                                    <div class="progress plan-progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Reviewer Feedback</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <button type="button" class="btn btn-success w-100">
+                                        <i class="fa-regular fa-check pe-2"></i>
+                                        Approve Plan
+                                    </button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-danger w-100">
+                                        <i class="fa-regular fa-xmark pe-2"></i>
+                                        Reject & Request Changes
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -983,7 +1102,9 @@
     <script src="assets/js/common-init.min.js"></script>
     <script src="assets/vendors/datatables/js/datatables.min.js"></script>
     <script src="assets/vendors/datatables/js/datatables.bootstrap5.min.js"></script>
-    <script src="assets/js/form-management.js"></script>
+    <script src="assets/vendors/full-calendar/fullcalendar.global.js"></script>
+    <script src="assets/vendors/full-calendar/themes/classic/global.js"></script>
+    <script src="assets/js/plain-details.js"></script>
 </body>
 
 </html>

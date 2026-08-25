@@ -883,94 +883,70 @@
     <main class="nxl-container">
         <div class="nxl-content">
             <div class="main-content">
-                <div class="page-header mb-16">
-                    <div class="page-header-left d-flex align-items-center">
+                <div class="page-header mb-16 justify-content-between">
+                    <div class="page-header-left d-flex">
                         <div class="page-header-title">
-                            <h5 class="mb-0">Form Management</h5>
+                            <h5 class="mb-0">Add Contact Point</h5>
                         </div>
+                    </div> 
+                    <div class="page-header-right d-flex gap-2">
+                        <button type="button" class="btn btn-primary btn-red">
+                            <i class="fa-regular fa-xmark pe-2"></i>
+                            Cancel
+                        </button>
+                        <button type="button" class="btn btn-primary btn-blue">
+                            <i class="fa-regular fa-floppy-disk pe-2"></i>
+                            Save Contact Point
+                        </button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
+                <div class="row mb-16">
+                    <div class="col-lg-8 mb-3 mb-lg-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 mb-3">
+                                        <label for="reference_id" class="form-label">Reference ID</label>
+                                        <input type="text" class="form-control" id="reference_id" placeholder="REF-2024-001" disabled>
+                                    </div>
+                                    <div class="col-lg-3 mb-3">
+                                        <label for="contact_point" class="form-label">Contact Point Name</label>
+                                        <input type="text" class="form-control" id="contact_point" placeholder="Contact Point Name">
+                                    </div>
+                                    <div class="col-lg-3 mb-3">
+                                        <label for="city" class="form-label">City</label>
+                                        <select class="form-select" id="city">
+                                            <option>Select City</option>
+                                            <option>Karachi</option>
+                                            <option>Lahore</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 mb-3">
+                                        <label for="latitude" class="form-label">Latitude</label>
+                                        <input type="text" class="form-control" id="latitude" placeholder="Latitude">
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mb-lg-0">
+                                        <label for="longitude" class="form-label">Longitude</label>
+                                        <input type="text" class="form-control" id="longitude" placeholder="Longitude">
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mb-lg-0">
+                                        <label for="effective" class="form-label">Effecttive To</label>
+                                        <input type="date" class="form-control" id="effective">
+                                    </div>
+                                    <div class="col-lg-3 mt-lg-auto">
+                                        <button type="button" class="btn btn-primary btn-blue">
+                                            <i class="fa-regular fa-map pe-2"></i>
+                                            Show Map
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="card-title">All Forms</h5>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-striped" id="form_management">
-                                        <thead>
-                                            <tr>
-                                                <th>Form Type Name</th>
-                                                <th>Description</th>
-                                                <th>Status</th>
-                                                <th class="text-end">Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>BAR</td>
-                                                <td>Solid form medication bar</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
-                                                            <i class="fa-regular fa-pen"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Body Wash</td>
-                                                <td>Liquid Topical Solution</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
-                                                            <i class="fa-regular fa-pen"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Capsule</td>
-                                                <td>Encapsulated Dose</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
-                                                            <i class="fa-regular fa-pen"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Dispenser</td>
-                                                <td>Manual dispensing mechanism</td>
-                                                <td><span class="badge bg-soft-success text-success">Active</span></td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
-                                                            <i class="fa-regular fa-pen"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                <h5 class="card-title">Coordinate Preview</h5>
                             </div>
                         </div>
                     </div>
@@ -983,7 +959,6 @@
     <script src="assets/js/common-init.min.js"></script>
     <script src="assets/vendors/datatables/js/datatables.min.js"></script>
     <script src="assets/vendors/datatables/js/datatables.bootstrap5.min.js"></script>
-    <script src="assets/js/form-management.js"></script>
 </body>
 
 </html>
