@@ -12,9 +12,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/datatables/css/datatables.bootstrap5.css">
-    <link href='assets/vendors/full-calendar/skeleton.css' rel='stylesheet' />
-    <link href='assets/vendors/full-calendar/themes/classic/theme.css' rel='stylesheet' />
-    <link href='assets/vendors/full-calendar/themes/classic/palette.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="assets/css/poppins.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -886,210 +883,172 @@
     <main class="nxl-container">
         <div class="nxl-content">
             <div class="main-content">
-                <div class="page-header mb-16">
+                <div class="page-header mb-16 d-flex justify-content-between">
                     <div class="page-header-left d-flex align-items-center">
                         <div class="page-header-title">
-                            <h5 class="mb-0">Plan Details</h5>
+                            <h5 class="mb-0">Leave Request Details</h5>
                         </div>
+                    </div>
+                    <div class="page-header-right d-flex align-items-center gap-2">
+                        <buton type="button" class="btn btn-primary btn-blue">
+                            <i class="fa-regular fa-print pe-2"></i>
+                            Print
+                        </buton>
+                        <buton type="button" class="btn btn-danger btn-red">
+                            <i class="fa-regular fa-file-pdf pe-2"></i>
+                            Export to PDF
+                        </buton>
                     </div>
                 </div>
                 <div class="row mb-16">
-                    <div class="col-12">
+                    <div class="col-lg-8 mb-3 mb-lg-0">
                         <div class="card">
                             <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div class="d-flex align-items-center gap-3 mb-3">
-                                            <h4 class="mb-0">Furqan ul Haque</h4>
-                                            <span class="badge rounded-pill text-primary bg-soft-primary">Pending Review</span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-1">
-                                            <i class="fa-regular fa-calendar"></i>
-                                            <p class="mb-0">Period: Oct 01 - Oct 31, 2023</p>
+                                <div class="row">
+                                    <div class="col-lg-3 mb-3 mb-lg-0">
+                                        <label for="employee_name" class="form-label">Employee Name</label>
+                                        <p class="mb-0" id="employee_name">Dr. Jonathan Aris</p>
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mb-lg-0">
+                                        <label for="employee_id" class="form-label">Employee ID</label>
+                                        <p class="mb-0" id="employee_id">EMP-2026-9981</p>
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mb-lg-0">
+                                        <label for="department" class="form-label">Leave Type</label>
+                                        <p class="mb-0" id="department">Clinical Research & Development</p>
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mb-lg-0">
+                                        <label for="department" class="form-label">Designation</label>
+                                        <p class="mb-0" id="department">Pharmacologist</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-4 mb-3 mb-lg-0">
+                                        <div class="border border-secondary rounded-2 p-3">
+                                            <div class="d-flex align-items-center gap-2 mb-2">
+                                                <i class="fa-regular fa-calendar-lines"></i>
+                                                <p class="mb-0">Leave Type</p>
+                                            </div>
+                                            <h5 class="mb-0">Medical / Sick Leave</h5>
                                         </div>
                                     </div>
-                                    <div>
-                                        <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-regular fa-file-pdf pe-2"></i>
-                                            Export PDF
-                                        </button>
+                                    <div class="col-lg-4 mb-3 mb-lg-0">
+                                        <div class="border border-secondary rounded-2 p-3">
+                                            <div class="d-flex align-items-center gap-2 mb-2">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                <p class="mb-0">Duration</p>
+                                            </div>
+                                            <h5 class="mb-0">03 Days (Full Day)</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3 mb-lg-0">
+                                        <div class="border border-secondary rounded-2 p-3">
+                                            <div class="d-flex align-items-center gap-2 mb-2">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                <p class="mb-0">Dates</p>
+                                            </div>
+                                            <h5 class="mb-0">Oct 24 - Oct 26 2026</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <label for="leave_reason" class="form-label">Reason For Leave</label>
+                                        <textarea class="form-control" id="leave_reason" rows="4">"I am undergoing a minor surgical procedure on the morning of the 24th and have been advised by my physician to take 72 hours of complete rest for recovery. I have already coordinated with my team members regarding the pending clinical trials data entry. Dr. Sarah Chen will be covering my emergency calls during this period."</textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mb-3 mb-lg-0">
+                    <div class="col-lg-4">
                         <div class="card mb-3">
-                            <div class="card-header d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Day to Day Plan</h5>
-                                <ul class="nav nav-pills custom-pills">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-bs-toggle="pill" href="#list">List View</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="pill" href="#calendars">Calendar</a>
-                                    </li>
-                                </ul>
+                            <div class="card-header">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <h5 class="card-title">Approval Tracking</h5>
                             </div>
                             <div class="card-body">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="list">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped" id="view_plan">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Date</th>
-                                                        <th>Target Doctor / Chemist</th>
-                                                        <th>Activity Type</th>
-                                                        <th>Objective</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="mb-0 blue">Aug 02</p>
-                                                            <span class="text-muted">Monday</span>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex align-items-center gap-2">
-                                                                <div class="text-avatar">
-                                                                <span>EH</span>
-                                                                </div>
-                                                                <div>
-                                                                    <p class="d-block mb-0 fw-bold">Dr. Elena Halpert</p>
-                                                                    <span>St. Mary's Cardiology</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td><span class="badge bg-soft-primary text-primary rounded-pill">Call</span></td>
-                                                        <td>Introduce Xyla-Duo cardiac maintenance protocols.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="mb-0 blue">Aug 02</p>
-                                                            <span class="text-muted">Monday</span>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex align-items-center gap-2">
-                                                                <div class="text-avatar">
-                                                                <span>CP</span>
-                                                                </div>
-                                                                <div>
-                                                                    <p class="d-block mb-0 fw-bold">City Pharma Lab</p>
-                                                                    <span>Regional Distributor</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td><span class="badge bg-soft-primary text-primary rounded-pill">Call</span></td>
-                                                        <td>Verify Q3 inventory levels and cold chain compliance.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="mb-0 blue">Aug 03</p>
-                                                            <span class="text-muted">Tuesday</span>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex align-items-center gap-2">
-                                                                <div class="text-avatar">
-                                                                <span>JS</span>
-                                                                </div>
-                                                                <div>
-                                                                    <p class="d-block mb-0 fw-bold">Dr. James Smith</p>
-                                                                    <span>Wellness General Clinic</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td><span class="badge bg-soft-primary text-primary rounded-pill">Metting</span></td>
-                                                        <td>CME session on metabolic syndrome management.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="mb-0 blue">Aug 04</p>
-                                                            <span class="text-muted">Wednesday</span>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex align-items-center gap-2">
-                                                                <div class="text-avatar">
-                                                                <span>AK</span>
-                                                                </div>
-                                                                <div>
-                                                                    <p class="d-block mb-0 fw-bold">Dr. Anita Kumar</p>
-                                                                    <span>Endocrine Specialist Center</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td><span class="badge bg-soft-primary text-primary rounded-pill">Call</span></td>
-                                                        <td>Follow-up on patient feedback for Insulin G2.</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="approval-timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-circle">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-header">
+                                                <div>
+                                                    <div class="timeline-title">Request Submitted </div>
+                                                    <div class="timeline-user">By Dr. Jonathan Aris </div>
+                                                </div>
+                                                <div class="timeline-date"> Oct 20, 09:15 AM </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="calendars">
-                                        <div id="calendar"></div>
+                                    <div class="timeline-item recommendation">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-circle">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-header">
+                                                <div>
+                                                    <div class="timeline-title">ASM Recommendation</div>
+                                                    <div class="timeline-user">By Michael Thorne (ASM)</div>
+                                                    <div class="timeline-comment">"Confirmed team coverage. Recommended for approval."</div>
+                                                </div>
+                                                <div class="timeline-date"> Oct 21, 02:30 PM </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item pending">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-circle">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-header">
+                                                <div>
+                                                    <div class="pending-title">Pending SM Final Approval</div>
+                                                    <div class="pending-user">Awaiting action from Elena Vance (SM)</div>
+                                                </div>
+                                                <div class="pending-status">In Progress </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="card-title">Workflow Timeline</h5>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <h5 class="card-title">Approval Action Panel</h5>
                             </div>
                             <div class="card-body">
-                                <ul class="timeline">
-                                    <li>
-                                        <p class="mb-1 fw-bold">Submitted by SPO</p>
-                                        <div class="d-flex gap-2 align-items-center">
-                                            <p class="mb-0">Robert Chen</p>
-                                            <i class="fa-solid fa-circle fs-8"></i>
-                                            <p class="mb-0">Aug 01, 2026</p>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <label for="manager_remarks">Manager Remarks (Mandatory for Rejection)</label>
+                                            <textarea class="form-control" id="manager_remarks" rows="4">Enter your comments or reasons for decision here...</textarea>
                                         </div>
-                                        <p>"Initial plan based on Q3 patient volume data."</p>
-                                    </li>
-                                    <li>
-                                        <p class="mb-1 fw-bold">ASM Recommendation</p>
-                                        <div class="d-flex gap-2 align-items-center">
-                                            <p class="mb-0">Sarah Jenkins</p>
-                                            <i class="fa-solid fa-circle fs-8"></i>
-                                            <p class="mb-0">Aug 03, 2026</p>
+                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                            <button type="button" class="btn btn-primary btn-blue w-100">
+                                                <i class="fa-solid fa-circle-check pe-2"></i>
+                                                Approve Request
+                                            </button>
                                         </div>
-                                        <p>"Strongly recommend approval Dr. Vance has exceeded targets for 3 consecutive quarters. ROI is high probable."</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="mb-3">Review Action</h5>
-                                <div class="p-2 bg-soft-primary mb-3">
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <p class="mb-0">Coverage As Per Frequency</p>
-                                        <p class="mb-0 blue fw-bold">92%</p>
+                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                            <button type="button" class="btn btn-danger btn-red w-100">
+                                                <i class="fa-regular fa-pen pe-2"></i>
+                                                Revise
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="progress plan-progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Reviewer Feedback</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <button type="button" class="btn btn-primary btn-blue w-100">
-                                        <i class="fa-regular fa-check pe-2"></i>
-                                        Approve Plan
-                                    </button>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-danger btn-red w-100">
-                                        <i class="fa-regular fa-xmark pe-2"></i>
-                                        Reject & Request Changes
-                                    </button>
-                                </div>
+                                </form>
+                                
                             </div>
                         </div>
                     </div>
@@ -1102,9 +1061,7 @@
     <script src="assets/js/common-init.min.js"></script>
     <script src="assets/vendors/datatables/js/datatables.min.js"></script>
     <script src="assets/vendors/datatables/js/datatables.bootstrap5.min.js"></script>
-    <script src="assets/vendors/full-calendar/fullcalendar.global.js"></script>
-    <script src="assets/vendors/full-calendar/themes/classic/global.js"></script>
-    <script src="assets/js/plain-details.js"></script>
+    <script src="assets/js/leave-request.js"></script>
 </body>
 
 </html>
