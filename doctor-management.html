@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hilton Pharma</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/hilton-logo.png">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/datatables/css/datatables.bootstrap5.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/poppins.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <nav class="nxl-navigation">
+        <div class="navbar-wrapper">
+            <div class="m-header">
+                <a href="index.html" class="b-brand d-flex justify-content-center">
+                    <img src="assets/images/hilton-logo.png" alt="Logo" class="logo logo-lg w-25" />
+                    <img src="assets/images/hilton-logo.png" alt="Logo" class="logo logo-sm" />
+                </a>
+            </div>
+            <div class="navbar-content">
+                <ul class="nxl-navbar">
+                    <li class="nxl-item">
+                        <a href="index.html" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-gauge"></i>
+                            </span>
+                            <span class="nxl-mtext">Dashboards</span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-gear"></i>
+                            </span>
+                            <span class="nxl-mtext">Administration</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="organization-structure.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-arrow-progress"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Organization Structure</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="team-master.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-users"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Team Master</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="roles-master.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-gear"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Roles Master</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="user-roles-privileges.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-gear"></i>
+                                    </span>
+                                    <span class="nxl-mtext">User Role Privileges</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="admin-employee-management.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Employee Management</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item nxl-hasmenu">
+                                <a href="javascript:void(0);" class="nxl-link">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-box"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Product Setup</span>
+                                    <span class="nxl-arrow">
+                                        <i class="feather-chevron-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="nxl-submenu">
+                                    <li class="nxl-item">
+                                        <a class="nxl-link" href="package-size.html">
+                                            <span class="nxl-micon">
+                                                <i class="fa-regular fa-box"></i>
+                                            </span>
+                                            <span class="nxl-mtext">Package Size</span>
+                                        </a>
+                                    </li>
+                                    <li class="nxl-item">
+                                        <a class="nxl-link" href="form-management.html">
+                                            <span class="nxl-micon">
+                                                <i class="fa-regular fa-file"></i>
+                                            </span>
+                                            <span class="nxl-mtext">Form Management</span>
+                                        </a>
+                                    </li>
+                                    <li class="nxl-item">
+                                        <a class="nxl-link" href="sku-management.html">
+                                            <span class="nxl-micon">
+                                                <i class="fa-regular fa-file"></i>
+                                            </span>
+                                            <span class="nxl-mtext">SKU Management</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-user"></i>
+                            </span>
+                            <span class="nxl-mtext">HR Management</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="new-resource.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </span>
+                                    <span class="nxl-mtext">New Resource</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="leave-request.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-briefcase-medical"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Leave Request</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="user-status.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </span>
+                                    <span class="nxl-mtext">User Status</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="doctor-management.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Doctor Management</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="employee-management.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Employee Management</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-calendar"></i>
+                            </span>
+                            <span class="nxl-mtext">Planning View</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="view-plan.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-calendar"></i>
+                                    </span>
+                                    <span class="nxl-mtext">View Plan</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-location-crosshairs"></i>
+                            </span>
+                            <span class="nxl-mtext">Contact Point</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="contact-point-master-list.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-location-crosshairs"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Master List</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-user-doctor"></i>
+                            </span>
+                            <span class="nxl-mtext">Doctor Setup</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="new-doctor.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-doctor"></i>
+                                    </span>
+                                    <span class="nxl-mtext">New Doctor</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="location.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-location-crosshairs"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Location</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="doctor-management.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-doctor"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Doctor Assignment</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="doctor-master-list.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-doctor"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Master List</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="doctor-designation.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-doctor"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Doctor Designation</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="uploader.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-doctor"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Doctor / Chemist Uploader</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="doctor-class.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-doctor"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Doctor Class</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="doctor-specialties.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-doctor"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Doctor Specialties</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="doctor-location-request.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-doctor"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Doctor Location Request</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="doctor-list.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user-doctor"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Addition / Removal Doctor</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-gift"></i>
+                            </span>
+                            <span class="nxl-mtext">Sample & Giveaways</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="sample-management.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-box"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Sample Management</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="sample-damage-request.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-box"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Sample Damage Request</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="gift-allocation.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-gift"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Gift Allocation</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="gift-damage.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-gift"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Gift Damage</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="gift-master-setup.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-gift"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Gift Master Setup</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item">
+                        <a href="content-management.html" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-file"></i>
+                            </span>
+                            <span class="nxl-mtext">Content Management</span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-campground"></i>
+                            </span>
+                            <span class="nxl-mtext">Camp Activity</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="camp-request.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-campground"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Camp Request</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="create-new-request.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-campground"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Create New Request</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="completed-camp-activities.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-campground"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Completed Camp Activities</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </span>
+                            <span class="nxl-mtext">Care Plan</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="create-care-plan.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-solid fa-hand-holding-heart"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Create Care Plan</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="care-plan-request.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-solid fa-hand-holding-heart"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Care Plan Request</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="investing-code.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-solid fa-money-bill"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Investing Code</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="new-discount-request.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-badge-percent"></i>
+                                    </span>
+                                    <span class="nxl-mtext">New Discount Request</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="discount-request.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-badge-percent"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Discount Request</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="discount-request-approval.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-badge-percent"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Discount Request Approval</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-solid fa-money-bill"></i>
+                            </span>
+                            <span class="nxl-mtext">Expense</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="expense-policy.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-solid fa-money-bill"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Expense Policy</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="monthly-request.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-solid fa-money-bill"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Monthly Expense</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="city-distance.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-location-crosshairs"></i>
+                                    </span>
+                                    <span class="nxl-mtext">City Distance</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-clipboard"></i>
+                            </span>
+                            <span class="nxl-mtext">Learning Management</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="content-repository.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Content Repository</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="schedule-session.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Schedule Session</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="question-vault.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Question Vault</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="quiz-configuration.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Quiz Configuration</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="learning-attendance.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-clipboard-user"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Learning Attendance</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-warehouse"></i>
+                            </span>
+                            <span class="nxl-mtext">Sales & Distributor</span>
+                            <span class="nxl-arrow">
+                                <i class="feather-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="sales-brick-management.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-warehouse"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Sales Brick Management</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="distributor-profile-setup.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Distributor Profile Setup</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="geo-scheme-setup.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-location-crosshairs"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Geo Scheme Setup</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="distributor-brick-city-mapping.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-location-crosshairs"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Distributor Brick City Mapping</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="sales-data-upload.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-upload"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Sales Data Upload</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="sales-target.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-file"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Sales Target</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="brick-allocation-setup.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-warehouse"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Brick Allocation Setup</span>
+                                </a>
+                            </li>
+                            <li class="nxl-item">
+                                <a class="nxl-link" href="sales-target-uploader.html">
+                                    <span class="nxl-micon">
+                                        <i class="fa-regular fa-upload"></i>
+                                    </span>
+                                    <span class="nxl-mtext">Sales Target Uploader</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item">
+                        <a href="settings.html" class="nxl-link">
+                            <span class="nxl-micon">
+                                <i class="fa-regular fa-gear"></i>
+                            </span>
+                            <span class="nxl-mtext">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="nxl-header">
+        <div class="header-wrapper">
+            <div class="header-left d-flex align-items-center gap-4">
+                <a href="javascript:void(0);" class="nxl-head-mobile-toggler" id="mobile-collapse">
+                    <div class="hamburger hamburger--arrowturn">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="nxl-navigation-toggle">
+                    <a href="javascript:void(0);" id="menu-mini-button">
+                        <i class="feather-align-left"></i>
+                    </a>
+                    <a href="javascript:void(0);" id="menu-expend-button" style="display: none">
+                        <i class="feather-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="header-right ms-auto">
+                <div class="d-flex align-items-center">
+                    <div class="dropdown nxl-h-item">
+                        <a class="nxl-head-link me-3" data-bs-toggle="dropdown" href="#" role="button" data-bs-auto-close="outside">
+                            <i class="feather-bell"></i>
+                            <span class="badge bg-danger nxl-h-badge">3</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end nxl-h-dropdown nxl-notifications-menu">
+                            <div class="d-flex justify-content-between align-items-center notifications-head">
+                                <h6 class="fw-bold text-dark mb-0">Notifications</h6>
+                                <a href="javascript:void(0);" class="fs-11 text-success text-end ms-auto" data-bs-toggle="tooltip" title="Make as Read">
+                                    <i class="feather-check"></i>
+                                    <span>Make as Read</span>
+                                </a>
+                            </div>
+                            <div class="notifications-item">
+                                <img src="assets/images/avatar/2.png" alt="" class="rounded me-3 border" />
+                                <div class="notifications-desc">
+                                    <a href="javascript:void(0);" class="font-body text-truncate-2-line"> <span class="fw-semibold text-dark">Malanie Hanvey</span> We should talk about that at lunch!</a>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="notifications-date text-muted border-bottom border-bottom-dashed">2 minutes ago</div>
+                                        <div class="d-flex align-items-center float-end gap-2">
+                                            <a href="javascript:void(0);" class="d-block wd-8 ht-8 rounded-circle bg-gray-300" data-bs-toggle="tooltip" title="Make as Read"></a>
+                                            <a href="javascript:void(0);" class="text-danger" data-bs-toggle="tooltip" title="Remove">
+                                                <i class="feather-x fs-12"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notifications-item">
+                                <img src="assets/images/avatar/3.png" alt="" class="rounded me-3 border" />
+                                <div class="notifications-desc">
+                                    <a href="javascript:void(0);" class="font-body text-truncate-2-line"> <span class="fw-semibold text-dark">Valentine Maton</span> You can download the latest invoices now.</a>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="notifications-date text-muted border-bottom border-bottom-dashed">36 minutes ago</div>
+                                        <div class="d-flex align-items-center float-end gap-2">
+                                            <a href="javascript:void(0);" class="d-block wd-8 ht-8 rounded-circle bg-gray-300" data-bs-toggle="tooltip" title="Make as Read"></a>
+                                            <a href="javascript:void(0);" class="text-danger" data-bs-toggle="tooltip" title="Remove">
+                                                <i class="feather-x fs-12"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notifications-item">
+                                <img src="assets/images/avatar/4.png" alt="" class="rounded me-3 border" />
+                                <div class="notifications-desc">
+                                    <a href="javascript:void(0);" class="font-body text-truncate-2-line"> <span class="fw-semibold text-dark">Archie Cantones</span> Don't forget to pickup Jeremy after school!</a>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="notifications-date text-muted border-bottom border-bottom-dashed">53 minutes ago</div>
+                                        <div class="d-flex align-items-center float-end gap-2">
+                                            <a href="javascript:void(0);" class="d-block wd-8 ht-8 rounded-circle bg-gray-300" data-bs-toggle="tooltip" title="Make as Read"></a>
+                                            <a href="javascript:void(0);" class="text-danger" data-bs-toggle="tooltip" title="Remove">
+                                                <i class="feather-x fs-12"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center notifications-footer">
+                                <a href="javascript:void(0);" class="fs-13 fw-semibold text-dark">Alls Notifications</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown nxl-h-item">
+                        <a href="javascript:void(0);" data-bs-toggle="dropdown" role="button" data-bs-auto-close="outside">
+                            <img src="assets/images/avatar/1.png" alt="user-image" class="img-fluid user-avtar me-0" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end nxl-h-dropdown nxl-user-dropdown">
+                            <div class="dropdown-header">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/avatar/1.png" alt="user-image" class="img-fluid user-avtar" />
+                                    <div>
+                                        <h6 class="text-dark mb-0">Alexandra Della <span class="badge bg-soft-success text-success ms-1">PRO</span></h6>
+                                        <span class="fs-12 fw-medium text-muted">alex.della@outlook.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="dropdown">
+                                    <span class="hstack">
+                                        <i class="wd-10 ht-10 border border-2 border-gray-1 bg-success rounded-circle me-2"></i>
+                                        <span>Active</span>
+                                    </span>
+                                    <i class="feather-chevron-right ms-auto me-0"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-10 ht-10 border border-2 border-gray-1 bg-warning rounded-circle me-2"></i>
+                                            <span>Always</span>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-10 ht-10 border border-2 border-gray-1 bg-success rounded-circle me-2"></i>
+                                            <span>Active</span>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-10 ht-10 border border-2 border-gray-1 bg-danger rounded-circle me-2"></i>
+                                            <span>Bussy</span>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-10 ht-10 border border-2 border-gray-1 bg-info rounded-circle me-2"></i>
+                                            <span>Inactive</span>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-10 ht-10 border border-2 border-gray-1 bg-dark rounded-circle me-2"></i>
+                                            <span>Disabled</span>
+                                        </span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-10 ht-10 border border-2 border-gray-1 bg-primary rounded-circle me-2"></i>
+                                            <span>Cutomization</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="dropdown">
+                                    <span class="hstack">
+                                        <i class="feather-dollar-sign me-2"></i>
+                                        <span>Subscriptions</span>
+                                    </span>
+                                    <i class="feather-chevron-right ms-auto me-0"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-5 ht-5 bg-gray-500 rounded-circle me-3"></i>
+                                            <span>Plan</span>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-5 ht-5 bg-gray-500 rounded-circle me-3"></i>
+                                            <span>Billings</span>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-5 ht-5 bg-gray-500 rounded-circle me-3"></i>
+                                            <span>Referrals</span>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-5 ht-5 bg-gray-500 rounded-circle me-3"></i>
+                                            <span>Payments</span>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-5 ht-5 bg-gray-500 rounded-circle me-3"></i>
+                                            <span>Statements</span>
+                                        </span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <span class="hstack">
+                                            <i class="wd-5 ht-5 bg-gray-500 rounded-circle me-3"></i>
+                                            <span>Subscriptions</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="feather-user"></i>
+                                <span>Profile Details</span>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="feather-activity"></i>
+                                <span>Activity Feed</span>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="feather-dollar-sign"></i>
+                                <span>Billing Details</span>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="feather-bell"></i>
+                                <span>Notifications</span>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="feather-settings"></i>
+                                <span>Account Settings</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="./auth-login-minimal.html" class="dropdown-item">
+                                <i class="feather-log-out"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="nxl-container">
+        <div class="nxl-content">
+            <div class="main-content">
+                <div class="page-header mb-16 d-flex justify-content-between">
+                    <div class="page-header-left d-flex align-items-center">
+                        <div class="page-header-title">
+                            <h5 class="mb-0">Doctor Management</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-wrapper">
+                    <aside class="sidebar" id="sidebar">
+                        <div class="sidebar-inner">
+                            <div class="sidebar-title"> Doctor Management </div>
+                            <ul class="nav nav-pills mode-pills" id="modeTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="doctor-mode-tab" data-bs-toggle="pill" data-bs-target="#doctor-mode" type="button" role="tab" aria-controls="doctor-mode" aria-selected="true"> Doctor Mode </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="chemist-mode-tab" data-bs-toggle="pill" data-bs-target="#chemist-mode" type="button" role="tab" aria-controls="chemist-mode" aria-selected="false"> Chemist Mode </button>
+                                </li>
+                            </ul>
+                            <div class="search-wrapper">
+                                <i class="bi bi-search"></i>
+                                <input type="text" id="personSearch" placeholder="Search by name, code, or territory...">
+                            </div>
+                            <div class="tab-content" id="modeTabContent">
+                                <div class="tab-pane fade show active" id="doctor-mode" role="tabpanel" aria-labelledby="doctor-mode-tab">
+                                    <div class="nav nav-pills flex-column person-pills" id="doctorList" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link active person-tab" id="doctor-amelia-tab" data-bs-toggle="pill" data-bs-target="#doctor-amelia" type="button" role="tab" data-name="Dr. Amelia Vance" data-initials="DA" data-code="CUST-900321" data-territory="T-102" data-type="Doctor" data-speciality="Cardiology" data-mobile="+1 (555) 012-3456" data-email="a.vance@medicalcenter.org" data-status="Active" data-date="04/18/2022">
+                                            <div class="person-item">
+                                                <div class="person-avatar">DA</div>
+                                                <div>
+                                                    <div class="person-name">Dr. Amelia Vance</div>
+                                                    <div class="person-meta">Territory: T-102 | Type: Doctor</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="nav-link person-tab" id="doctor-julian-tab" data-bs-toggle="pill" data-bs-target="#doctor-julian" type="button" role="tab" data-name="Dr. Julian Sorkin" data-initials="JS" data-code="CUST-900322" data-territory="T-105" data-type="Doctor" data-speciality="Neurology" data-mobile="+1 (555) 012-4567" data-email="j.sorkin@medicalcenter.org" data-status="Active" data-date="05/12/2022">
+                                            <div class="person-item">
+                                                <div class="person-avatar">JS</div>
+                                                <div>
+                                                    <div class="person-name">Dr. Julian Sorkin</div>
+                                                    <div class="person-meta">Territory: T-105 | Type: Doctor</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="nav-link person-tab" id="doctor-maya-tab" data-bs-toggle="pill" data-bs-target="#doctor-maya" type="button" role="tab" data-name="Dr. Maya Kapoor" data-initials="MK" data-code="CUST-900323" data-territory="T-201" data-type="Doctor" data-speciality="Dermatology" data-mobile="+1 (555) 012-5678" data-email="m.kapoor@medicalcenter.org" data-status="Active" data-date="06/20/2022">
+                                            <div class="person-item">
+                                                <div class="person-avatar">MK</div>
+                                                <div>
+                                                    <div class="person-name">Dr. Maya Kapoor</div>
+                                                    <div class="person-meta">Territory: T-201 | Type: Doctor</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="nav-link person-tab" id="doctor-robert-tab" data-bs-toggle="pill" data-bs-target="#doctor-robert" type="button" role="tab" data-name="Dr. Robert Blaire" data-initials="RB" data-code="CUST-900324" data-territory="T-102" data-type="Doctor" data-speciality="General Medicine" data-mobile="+1 (555) 012-6789" data-email="r.blaire@medicalcenter.org" data-status="Active" data-date="07/15/2022">
+                                            <div class="person-item">
+                                                <div class="person-avatar">RB</div>
+                                                <div>
+                                                    <div class="person-name">Dr. Robert Blaire </div>
+                                                    <div class="person-meta">Territory: T-102 | Type: Doctor </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="chemist-mode" role="tabpanel" aria-labelledby="chemist-mode-tab">
+                                    <div class="nav nav-pills flex-column person-pills" id="chemistList" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link active person-tab" id="chemist-john-tab" data-bs-toggle="pill" data-bs-target="#chemist-john" type="button" role="tab">
+                                            <div class="person-item">
+                                                <div class="person-avatar">JP</div>
+                                                <div>
+                                                    <div class="person-name">John Pharmacy</div>
+                                                    <div class="person-meta">Territory: T-102 | Type:<br> Chemist</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="nav-link person-tab" id="chemist-city-tab" data-bs-toggle="pill" data-bs-target="#chemist-city" type="button" role="tab">
+                                            <div class="person-item">
+                                                <div class="person-avatar">CC</div>
+                                                <div>
+                                                    <div class="person-name">City Care Pharmacy</div>
+                                                    <div class="person-meta">Territory: T-105 | Type:Chemist</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="nav-link person-tab" id="chemist-health-tab" data-bs-toggle="pill" data-bs-target="#chemist-health" type="button" role="tab">
+                                            <div class="person-item">
+                                                <div class="person-avatar">HP</div>
+                                                <div>
+                                                    <div class="person-name">Health Plus Pharmacy </div>
+                                                    <div class="person-meta">Territory: T-201 | Type: Chemist</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="nav-link person-tab" id="chemist-medico-tab" data-bs-toggle="pill" data-bs-target="#chemist-medico" type="button" role="tab">
+                                            <div class="person-item">
+                                                <div class="person-avatar">MP</div>
+                                                <div>
+                                                    <div class="person-name">Medico Pharmacy</div>
+                                                    <div class="person-meta">Territory: T-102 | Type: Chemist</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <main class="main">
+                        <header class="profile-header">
+                            <div class="profile-left">
+                                <div class="profile-avatar" id="profileAvatar">DA</div>
+                                <div>
+                                    <div class="profile-name-row">
+                                        <span class="profile-name" id="profileName">Dr. Amelia Vance</span> 
+                                        <span class="profile-status badge rounded-pill text-success bg-soft-success">● Active</span>
+                                    </div>
+                                    <div class="profile-meta"> ID:
+                                        <span id="profileCode">CUST-900321</span> | Last Visit: <span id="lastVisit">12 Oct 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-blue">Save Changes</button>
+                        </header>
+
+                        <div class="content-area">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <span class="accordion-title">
+                                                <i class="fa-solid fa-rectangle-history"></i>
+                                                <span>Assignment Hierarchy & Territories</span>
+                                            </span>
+
+                                            <span class="accordion-edit">
+                                                <i class="fa-regular fa-pen-to-square"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-lg-6 mb-3 mb-lg-0">
+                                                        <label class="form-label" for="territory">Multi-Terriroty Field</label>
+                                                        <select class="form-select" id="territory" multiple>
+                                                            <option>Select</option>
+                                                            <option>T-101</option>
+                                                            <option>T-102</option>
+                                                            <option>T-103</option>
+                                                            <option>T-104</option>
+                                                            <option>T-105</option>
+                                                            <option>T-106</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <label class="form-label" for="brick">Brick Assignment</label>
+                                                        <select class="form-select" id="brick" multiple>
+                                                            <option>Select</option>
+                                                            <option>B-NORTH-A</option>
+                                                            <option>B-NORTH-B</option>
+                                                            <option>B-NORTH-C</option>
+                                                            <option>B-NORTH-D</option>
+                                                            <option>B-NORTH-E</option>
+                                                            <option>B-NORTH-F</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span class="accordion-title">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span>Doctor Profile Details</span>
+                                            </span>
+
+                                            <span class="accordion-edit">
+                                                <i class="fa-regular fa-pen-to-square"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-lg-4 mb-3">
+                                                        <label class="form-label-custom"> First Name </label>
+                                                        <input type="text" id="firstName" class="form-control" value="Amelia">
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 mb-3">
+                                                        <label class="form-label-custom"> Last Name </label>
+                                                        <input type="text" id="lastName" class="form-control" value="Vance">
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 mb-3">
+                                                        <label class="form-label-custom"> Unique Code </label>
+                                                        <input type="text" id="uniqueCode" class="form-control disabled-field" value="CUST-900321" readonly>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 mb-3">
+                                                        <label class="form-label-custom"> Speciality/Qualification </label>
+                                                        <select id="speciality" class="form-select">
+                                                            <option>Cardiology</option>
+                                                            <option>Neurology</option>
+                                                            <option>Dermatology</option>
+                                                            <option>General Medicine</option>
+                                                            <option>Retail Pharmacy</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 mb-3">
+                                                        <label class="form-label-custom">Classification</label>
+                                                        <div class="classification">
+                                                            <button class="active">A+</button>
+                                                            <button>A</button>
+                                                            <button>B</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 mb-3">
+                                                        <label class="form-label-custom"> Mobile </label>
+                                                        <input type="text" id="mobile" class="form-control" value="+1 (555) 012-3456">
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                        <label class="form-label-custom">Email</label>
+                                                        <input type="email" id="email" class="form-control" value="a.vance@medicalcenter.org">
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                        <label class="form-label-custom"> Status </label>
+                                                        <select class="form-select">
+                                                            <option>Active</option>
+                                                            <option>Inactive</option>
+                                                            <option>Pending</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                        <label class="form-label-custom"> Registration Date </label>
+                                                        <input type="date" class="form-control" value="2022-04-18">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="accordion-title">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <span>Address & Location Management</span>
+                                            </span>
+
+                                            <div class="accordion-edit">
+                                                <i class="fa-regular fa-pen-to-square"></i>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row mb-3">
+                                                <div class="col-12">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-striped" id="address">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th> Address Type </th>
+                                                                    <th> Full Address </th>
+                                                                    <th> Geolocation (Lat/Long) </th>
+                                                                    <th> Brick Code </th>
+                                                                    <th> Action </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Clinic </td>
+                                                                    <td>402 Heartwood Drive, Suite 10, Chicago </td>
+                                                                    <td class="geo">41.8781, -87.6298 </td>
+                                                                    <td><strong>B-NORTH-A</strong> </td>
+                                                                    <td>
+                                                                        <div class="hstack gap-2 justify-content-end">
+                                                                            <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
+                                                                                <i class="fa-regular fa-pen"></i>
+                                                                            </a>
+                                                                            <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
+                                                                                <i class="fa-regular fa-trash"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Hospital </td>
+                                                                    <td>St. Jude General, 12th Floor, Chicago </td>
+                                                                    <td class="geo">41.8819, -87.6231 </td>
+                                                                    <td><strong>B-WEST-02</strong> </td>
+                                                                    <td>
+                                                                        <div class="hstack gap-2 justify-content-end">
+                                                                            <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Edit">
+                                                                                <i class="fa-regular fa-pen"></i>
+                                                                            </a>
+                                                                            <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="tooltip" title="Delete">
+                                                                                <i class="fa-regular fa-trash"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card border-0">
+                                                        <div class="card-header">
+                                                            <h5 class="card-title">Add / Edit Address Details</h5>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <form>
+                                                                <div class="row mb-3">
+                                                                    <div class="col-lg-4 mb-3 mb-lg-0">
+                                                                        <label class="form-label" for="address">Full Address</label>
+                                                                        <input type="text" class="form-control" id="address">
+                                                                    </div>
+                                                                    <div class="col-lg-2 mb-3 mb-lg-0">
+                                                                        <label class="form-label" for="latitude">Latitude</label>
+                                                                        <input type="text" class="form-control" id="latitude">
+                                                                    </div>
+                                                                    <div class="col-lg-2 mb-3 mb-lg-0">
+                                                                        <label class="form-label" for="longitude">Longitude</label>
+                                                                        <input type="text" class="form-control" id="longitude">
+                                                                    </div>
+                                                                    <div class="col-lg-4 mb-3 mb-lg-0">
+                                                                        <label class="form-label" for="address">Brick</label>
+                                                                        <select class="form-select" id="address">
+                                                                            <option>B-NORTH-A</option>
+                                                                            <option>B-NORTH-B</option>
+                                                                            <option>B-NORTH-C</option>
+                                                                            <option>B-NORTH-D</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-6 d-flex gap-2 mb-3 mb-lg-0">
+                                                                        <button type="button" class="btn btn-sm btn-primary btn-blue">
+                                                                            <i class="fa-solid fa-plus pe-2"></i>
+                                                                            Add Address
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-sm btn-danger btn-red">
+                                                                            <i class="fa-regular fa-trash pe-2"></i>
+                                                                            Remove Selected
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <button type="button" class="btn btn-sm btn-primary btn-blue ms-auto">
+                                                                            <i class="fa-regular fa-map pe-2"></i>
+                                                                            View all on Google Map
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <span class="accordion-title">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <span>Care Plan ROI</span>
+                                            </span>
+
+                                            <span class="accordion-edit">
+                                                <i class="fa-solid fa-turn-left"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>T.code</th>
+                                                                    <th>Employee name</th>
+                                                                    <th>Plan</th>
+                                                                    <th>Status</th>
+                                                                    <th class="text-end">Uplift </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>T-102</td>
+                                                                    <td><strong>David Miller</strong></td>
+                                                                    <td>Gold Heart Care</td>
+                                                                    <td>
+                                                                        <span class="badge rounded-pill bg-soft-success text-success">Active</span>
+                                                                    </td>
+                                                                    <td class="text-end uplift">+12.4%</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>T-105</td>
+                                                                    <td><strong> Sarah Jennings</strong></td>
+                                                                    <td>Patient Outreach v2</td>
+                                                                    <td>
+                                                                        <span class="badge rounded-pill bg-soft-warning text-warning">Pending</span>
+                                                                    </td>
+                                                                    <td class="text-end uplift">+8.2%</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>T-102</td>
+                                                                    <td><strong>David Miller</strong></td>
+                                                                    <td>Chronic Med Sync</td>
+                                                                    <td>
+                                                                        <span class="badge rounded-pill bg-soft-primary text-primary">Completed</span>
+                                                                    </td>
+                                                                    <td class="text-end uplift">+15.7%</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <span class="accordion-title">
+                                                <i class="fa-solid fa-tent"></i>
+                                                <span>Camp Activity</span>
+                                            </span>
+
+                                            <span class="accordion-edit">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Title </th>
+                                                                    <th>Description</th>
+                                                                    <th>Inventory</th>
+                                                                    <th class="text-end">Date of Activity</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span class="camp-title">Free Cardiac Checkup</span>
+                                                                    </td>
+                                                                    <td>Community outreach for elderly patients focusing on BP monitoring. </td>
+                                                                    <td>
+                                                                        <span class="badge bg-soft-primary text-primary">BP Kits (20)</span>
+                                                                        <span class="badge bg-soft-primary text-primary">Leaflets (100)</span>
+                                                                    </td>
+                                                                    <td class="text-end geo">15 Nov 2023</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span class="camp-title">Diabetes Awareness Drive</span>
+                                                                    </td>
+                                                                    <td>Educational seminar at City Medical Hall.</td>
+                                                                    <td>
+                                                                        <span class="badge bg-soft-primary text-primary">Glucometers (10)</span>
+                                                                        <span class="badge bg-soft-primary text-primary">Strips (500)</span>
+                                                                    </td>
+                                                                    <td class="text-end geo">22 Nov 2023</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span class="camp-title">Annual Vaccination Camp</span>
+                                                                    </td>
+                                                                    <td>Flu vaccination drive for local clinic walk-ins. </td>
+                                                                    <td>
+                                                                        <span class="badge bg-soft-primary text-primary">Vials (200)</span>
+                                                                        <span class="badge bg-soft-primary text-primary">Syringes (200)</span>
+                                                                    </td>
+                                                                    <td class="text-end geo">05 Dec 2023</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/vendors.min.js"></script>
+    <script src="assets/js/common-init.min.js"></script>
+    <script src="assets/vendors/datatables/js/datatables.min.js"></script>
+    <script src="assets/vendors/datatables/js/datatables.bootstrap5.min.js"></script>
+    <script src="assets/vendors/select2/select2.min.js"></script>
+    <script src="assets/js/doctor-management.js"></script>
+</body>
+
+</html>
